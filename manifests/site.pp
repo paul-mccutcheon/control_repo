@@ -6,6 +6,11 @@ node 'master.puppet.vm' {
     ensure => file,
     content => "Welcome to ${fqdn}\n",
    }
+   file { '/etc/hosts':
+    ensure => file,
+    content => "172.18.0.3 web web.puppet.vm\n",
+    content => "172.18.0.2 db db.puppet.vm\n",
+   }
 }
 
 node /^web/ {
