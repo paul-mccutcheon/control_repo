@@ -8,8 +8,7 @@ node 'master.puppet.vm' {
    }
    file { '/etc/hosts':
     ensure => file,
-    content =>  "172.18.0.3 web web.puppet.vm\n",
-                "172.18.0.2 db db.puppet.vm\n",
+    content =>  "172.18.0.3 web web.puppet.vm\n172.18.0.2 db db.puppet.vm\n",              
    }
 }
 
