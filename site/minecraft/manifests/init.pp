@@ -21,3 +21,4 @@ class minecraft {
             enabled => running,
             enabled => true,
         }
+}
